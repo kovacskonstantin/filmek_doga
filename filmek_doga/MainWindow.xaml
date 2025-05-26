@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="215*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Lekérdez" HorizontalAlignment="Left" Margin="230,124,0,0" VerticalAlignment="Top" Grid.Row="1" Click="Button_Click"/>
+        <ListBox x:Name="lbAdatok" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="364,16,32,26" Grid.Row="1" SelectionChanged="lbAdatok_SelectionChanged"/>
+        <Label x:Name="lbFilmAzon" Content="-" HorizontalAlignment="Left" Margin="24,16,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb1" HorizontalAlignment="Left" Margin="31,97,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb2" HorizontalAlignment="Left" Margin="31,139,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb3" HorizontalAlignment="Left" Margin="31,190,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb4" HorizontalAlignment="Left" Margin="31,239,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb5" HorizontalAlignment="Left" Margin="31,284,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Módosít" HorizontalAlignment="Left" Margin="230,213,0,0" Grid.Row="1" VerticalAlignment="Top" Width="51" Click="Button_Click_1"/>
+
     </Grid>
 </Window>
